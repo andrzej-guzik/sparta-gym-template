@@ -1,0 +1,27 @@
+.cta-primary {
+    background: $accent-color;
+
+    &__left {
+        h4 {
+            color: $white;
+            text-align: center;
+            padding: 1rem 0;
+            
+            @include media-breakpoint-up(lg) {
+                text-align: left;
+                padding: 1.25rem 0;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+
+        @include media-breakpoint-up(md) {
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}

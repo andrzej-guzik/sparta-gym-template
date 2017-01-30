@@ -1,0 +1,12 @@
+.about-us {
+    background: $dark-gray;
+    
+    &__image {
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
