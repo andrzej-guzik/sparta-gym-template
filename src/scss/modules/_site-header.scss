@@ -1,0 +1,32 @@
+.site-header {
+    .navbar {
+        .container {
+    		@include media-breakpoint-down(md) {
+    			width: 100%;
+    		}
+    	}
+
+        &.bg-inverse {
+            background: #1c1b1b !important;
+        }
+    }
+
+    .navbar-inverse .navbar-nav .open > .nav-link, .navbar-inverse .navbar-nav .active > .nav-link, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .nav-link.active {
+        color: $accent-color;
+        font-weight: 700;
+    }
+
+    .navbar-brand {
+        font-family: $font-family-logo;
+        font-size: 1.1rem;
+        color: $accent-color;
+
+        &:focus, &:hover {
+            color:lighten($accent-color, 5%);
+        }
+
+        @include media-breakpoint-up(sm) {
+            font-size: 1.4rem;
+        }
+    }
+}

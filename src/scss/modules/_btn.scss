@@ -1,0 +1,15 @@
+.btn-outline-secondary {
+    border: 2px solid $white;
+
+    &:focus, &:hover {
+        border: 2px solid $accent-color;
+        background: $accent-color;
+    }
+}
+
+.btn-lg {
+    padding: 1rem 4rem;
+    @include media-breakpoint-up(md)  {
+        padding: 1.5rem 6rem;
+    }
+}

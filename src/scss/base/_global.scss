@@ -1,3 +1,22 @@
+html, body {
+    height: 98%;
+}
+
+body {
+    font-family: $font-family-body;
+    text-rendering: optimizeLegibility;
+}
+
 img {
     max-width: 100%;
+}
+
+h1, h2, h3 ,h4 ,h5 ,h6 {
+    font-family: $font-family-headers;
+}
+
+h1 {
+    @include media-breakpoint-up(md) {
+        font-size: 4.5rem;
+    }
 }

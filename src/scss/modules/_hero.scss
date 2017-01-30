@@ -1,0 +1,28 @@
+.hero {
+    background: url("../../assets/images/man-1282232.jpg") center center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include overlay(#000, .4);
+
+    &__caption {
+        padding-top: 1.5rem;
+        color: $white;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 5rem;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 4rem;
+            }
+        }
+    }
+}
