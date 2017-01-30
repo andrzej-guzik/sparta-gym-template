@@ -1,0 +1,28 @@
+.our-trainers {
+    background: $gray;
+
+    .lead {
+        padding-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+        }
+    }
+
+    .trainer-title {
+        font-size: .875rem;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+
+    .card {
+        border: none;
+
+        .card-block {
+            background: $dark-gray;
+            padding: 2rem;
+        }
+    }
+}

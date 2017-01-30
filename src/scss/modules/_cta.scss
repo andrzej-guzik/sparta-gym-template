@@ -6,7 +6,7 @@
             color: $white;
             text-align: center;
             padding: 1rem 0;
-            
+
             @include media-breakpoint-up(lg) {
                 text-align: left;
                 padding: 1.25rem 0;
@@ -22,6 +22,25 @@
         @include media-breakpoint-up(md) {
             align-items: center;
             justify-content: flex-end;
+        }
+    }
+}
+
+.cta-secondary {
+    background: url("../../assets/images/weights-646496_1920.jpg") center center;
+    background-size: cover;
+    @include overlay(#000, .8);
+    text-align: center;
+
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+
+        @include media-breakpoint-up(md) {
+            font-size: 2rem;
+            margin-bottom: 4rem;
+            padding: 0 3rem;
         }
     }
 }
