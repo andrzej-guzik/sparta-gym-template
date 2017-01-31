@@ -1,0 +1,46 @@
+.site-footer {
+    background: #1e1e1e;
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+
+    h4 {
+        font-size: 1.125rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-weight: 700;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 0;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: .875rem;
+    }
+
+    a {
+        color: rgba($white, .7);
+        &:hover {
+            color: $accent-color;
+            text-decoration: none;
+        }
+    }
+
+    &__copyright {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba($white, .1);
+    }
+
+    .social {
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 2rem;
+        }
+
+        .social-icon {
+            font-size: 1.125rem;
+            padding: 0 .875rem;
+        }
+    }
+}
