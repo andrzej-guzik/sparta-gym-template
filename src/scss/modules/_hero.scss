@@ -15,14 +15,5 @@
         @include media-breakpoint-up(lg) {
             padding-top: 5rem;
         }
-
-        .lead {
-            font-size: 1.5rem;
-            padding-bottom: 2rem;
-
-            @include media-breakpoint-up(lg) {
-                padding-bottom: 4rem;
-            }
-        }
     }
 }

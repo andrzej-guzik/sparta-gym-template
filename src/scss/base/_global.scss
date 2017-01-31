@@ -30,3 +30,13 @@ p {
     color: $white;
     font-weight: 300;
 }
+
+p.lead {
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+    }
+}
