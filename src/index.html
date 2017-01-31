@@ -48,7 +48,7 @@
 			<div class="hero__caption">
 				<h1>Expand Your Limits</h1>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit expedita</p>
-				<a href="#" class="btn btn-xlg btn-outline-secondary" role="button">Join Us</a>
+				<a href="#" class="btn btn-xlg btn-outline-secondary" data-toggle="modal" data-target="#freeTrialModal" role="button">Join Us</a>
 			</div>
 		</div>
 	</section>
@@ -61,7 +61,7 @@
 						<h4 class="text-uppercase">Prepare yourself for life, the unknown and unknowable</h4>
 					</div>
 					<div class="col-md-3 offset-md-2 cta-primary__right">
-						<a href="#" class="btn btn-lg btn-secondary" role="button">Free Trial Lesson</a>
+						<a href="#" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#freeTrialModal" role="button">Free Trial Lesson</a>
 					</div>
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 		<section class="cta-secondary wrapper">
 			<div class="container">
 				<h3 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium culpa corporis eos, assumenda quos sit impedit cum, maiores? Labore error saepe molestias, molestiae sequi nulla.</h3>
-				<a href="#" class="btn btn-xlg btn-outline-secondary" role="button">Join Us</a>
+				<a href="#" class="btn btn-xlg btn-outline-secondary" data-toggle="modal" data-target="#freeTrialModal" role="button">Join Us</a>
 			</div>
 		</section>
 		<!-- Subscriptions Section -->
@@ -285,6 +285,78 @@
 			<p class="site-footer__copyright text-center">Copyright &copy; 2017 <a href="mailto:a.guzik80@gmail.com" rel="author">Andrzej Guzik</a>. All Rights Reserved</p>
 		</div>
 	</footer>
+
+	<!-- Modal Window -->
+	<div class="modal fade" id="freeTrialModal" tabindex="-1" role="dialog" aria-labelledby="freeTrialModal" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+	    	<div class="modal-content">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-6">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+				</div>
+	      		<div class="modal-body">
+			        <div class="row">
+						<div class="col-lg-6">
+
+						</div>
+			        	<div class="col-lg-6 form-modal">
+							<form action="" method="post">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="first-name" class="form-control-label">First Name</label>
+											<input type="text" class="form-control" id="first-name">
+									 	</div>
+									 	<div class="form-group">
+											<label for="job-title" class="form-control-label">Job Title</label>
+											<input type="text" class="form-control" id="job-title">
+										</div>
+										<div class="form-group">
+										   <label for="email" class="form-control-label">Email Address</label>
+										   <input type="text" class="form-control" id="email">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+										  <label for="last-name" class="form-control-label">Last Name</label>
+										  <input type="text" class="form-control" id="last-name">
+										</div>
+										<div class="form-group">
+										  <label for="company-name" class="form-control-label">Company Name</label>
+										  <input type="text" class="form-control" id="company-name">
+										</div>
+										<div class="form-group">
+										  <label for="employees" class="form-control-label">Number of Employees</label>
+										  <input type="text" class="form-control" id="employees">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="form-control-label" for="industry">Industry</label>
+										<select class="form-control" id="industry">
+											<option selected>-- Please select --</option>
+											<option value="1">Lorem ipsum dolor sit amet consectetur</option>
+											<option value="2">Lorem ipsum dolor sit amet consectetur</option>
+											<option value="3">Lorem ipsum dolor sit amet consectetur</option>
+										</select>
+								 </div>
+								<div class="form-group">
+									<label for="message-text" class="sr-only">Message</label>
+									<textarea class="form-control" id="message-text"></textarea>
+								</div>
+								<button type="submit" class="btn btn-md btn-primary">Send Request</button>
+					        </form>
+			        	</div>
+			        </div>
+	      		</div>
+    		</div>
+ 	 	</div>
+	</div>
 
 	<!-- build:js js/vendor.min.js -->
 	<script src="js/vendor/jquery.min.js"></script>

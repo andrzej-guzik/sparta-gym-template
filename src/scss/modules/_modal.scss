@@ -1,0 +1,41 @@
+.modal {
+	background: rgba(lighten(#000, 15%), .9);
+
+	button {
+		width: 100%;
+	}
+
+	.modal-lg {
+		@include media-breakpoint-up(lg) {
+			max-width: 80%;
+		}
+	}
+
+	.close {
+		color: $white;
+		text-align: right;
+	}
+
+	.modal-header {
+		border: none;
+	}
+
+	.modal-content {
+		background: url("../../assets/images/man-1282232.jpg") no-repeat center center;
+		background-size: cover;
+
+		.form-modal {
+			background: $white;
+
+			form {
+				padding: 1.5rem 0;
+			}
+
+			.form-control {
+				&:focus {
+					border: 1px solid $accent-color;
+				}
+			}
+		}
+	}
+}
