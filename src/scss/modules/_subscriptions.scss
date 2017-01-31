@@ -1,11 +1,9 @@
 .subscriptions {
     background: $gray;
 
-
-
     .card {
         border: none;
-        
+
         @include media-breakpoint-down(md){
             margin-bottom: 2rem;
         }

@@ -4,17 +4,21 @@ var config = {
 		dest: "./docs",
 		styles: "./docs/css",
 		scripts: "./docs/js",
-		images: "./docs/assets/images"
+		images: "./docs/assets/images",
+		fonts: "./docs/assets/fonts"
 	},
 	styles: {
 		src: "./src/scss/styles.scss",
-		dest: "./src/temp/css",
+		dest: "./src/css",
 		srcDir: "./src/scss/**/*.scss",
 	},
 	scripts: {
 		src: "./src/js/scripts.js",
 		dest: "./src/temp/js",
 		srcDir: "./src/js/**/*.js",
+	},
+	fonts: {
+		src: "./src/assets/fonts/**/*"
 	},
 	images: {
 		src: "./src/assets/images/**/*"
@@ -25,7 +29,7 @@ var config = {
 			baseDir: "src"
 		},
 		files:[
-			"./src/temp/css/**/*.css",
+			"./src/css/**/*.css",
 			"./src/index.html"
 		]
 	}
