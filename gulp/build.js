@@ -14,7 +14,7 @@ gulp.task("build:styles", function() {
 			browsers: ["> 0%"],
 			cascade: false
 		}))
-		.pipe(gulp.dest(config.build.styles));
+		.pipe(gulp.dest(config.styles.dest));
 });
 
 gulp.task("clearBuild", function() {
