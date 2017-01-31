@@ -5,6 +5,8 @@
     &:focus, &:hover {
         background: lighten($accent-color, 5%);
         border: none;
+        box-shadow: none;
+        color: $white;
     }
 }
 
@@ -14,6 +16,8 @@
     &:focus, &:hover {
         border: 2px solid $accent-color;
         background: $accent-color;
+        box-shadow: none;
+        color: $white;
     }
 }
 
