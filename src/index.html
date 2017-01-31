@@ -215,36 +215,45 @@
 		<!-- Quote Section -->
 		<section class="quote">
 			<div class="container">
-				<blockquote class="blockquote">
-					<p class="mb-0">We must train hard. It’s not about denying a weakness may exist but about denying its right to persist.</p>
-					<footer class="blockquote-footer"> <cite>Vince McConnell</cite> <span>(Personal Coach)</span></footer>
+				<blockquote>
+					<span class="fa fa-quote-left"></span>
+					<p>We must train hard. It’s not about denying a weakness may exist but about denying its right to persist.</p>
+					<footer> <cite>Vince McConnell (Personal Coach)</cite></footer>
 				</blockquote>
 			</div>
 		</section>
 		<!-- Contact Us Section -->
-		<section id="contact" class="contact-us">
+		<section id="contact" class="contact-us wrapper">
 			<div class="container">
-				<h2>Contact Us</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolor debitis sapiente.</p>
-				<form action="contact.php" method="post">
-					<div class="form-group">
-						<label for="name" class="sr-only">Your Name</label>
-						<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+				<h2 class="text-center">Contact Us</h2>
+				<p class="lead text-center">Temporibus dolor debitis sapiente.</p>
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3">
+						<form action="contact.php" method="post">
+							<div class="form-group">
+								<label for="name" class="sr-only">Your Name</label>
+								<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+								<div class="input-underline"></div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">Email address</label>
+								<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+								<div class="input-underline"></div>
+							</div>
+							<div class="form-group">
+								<label for="phone" class="sr-only">Your Phone</label>
+								<input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
+								<div class="input-underline"></div>
+							</div>
+							<div class="form-group">
+								<label for="message" class="sr-only">Your Message</label>
+								<textarea class="form-control" id="message" aria-describedby="message" placeholder="Message"></textarea>
+								<div class="input-underline"></div>
+							</div>
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</form>
 					</div>
-					<div class="form-group">
-						<label for="email" class="sr-only">Email address</label>
-						<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label for="phone" class="sr-only">Your Phone</label>
-						<input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
-					</div>
-					<div class="form-group">
-						<label for="message" class="sr-only">Your Message</label>
-						<textarea class="form-control" id="message" aria-describedby="message" placeholder="Message"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Send Message</button>
-				</form>
+				</div>
 			</div>
 		</section>
 	</main>

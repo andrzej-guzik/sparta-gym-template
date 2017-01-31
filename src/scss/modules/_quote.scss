@@ -1,0 +1,37 @@
+.quote {
+    background: url("../../assets/images/weights-664765.jpg") center center;
+    background-size: cover;
+    @include overlay(#000, .85);
+
+    blockquote {
+        padding: 5rem 0;
+        margin: 0;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            padding: 8rem 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 12rem 0;
+        }
+
+        span {
+            font-size: 2rem;
+            color: rgba($white, .5);
+        }
+
+        p {
+            font-size: 1.5rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 2.2rem;
+            }
+        }
+
+        cite {
+            font-size: 1.25rem;
+            color: rgba($white, .5);
+        }
+    }
+}

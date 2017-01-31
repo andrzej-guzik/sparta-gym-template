@@ -1,0 +1,64 @@
+.contact-us {
+    background: url("../../assets/images/dumbbells-932426_1920.jpg") center center;
+    background-size: cover;
+    @include overlay($dark-gray, .99);
+
+    form {
+        .form-group {
+            height: 3.125rem;
+			position: relative;
+
+            input, textarea {
+                display: block;
+                background: transparent;
+                border: none;
+                outline: none;
+                padding: 5px 0;
+                width: 100%;
+
+                &:focus {
+                    background: none;
+                }
+
+                &:focus + .input-underline:before, &:focus + .input-underline:after {
+                    width: 50%;
+                }
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: rgba($white, .5);
+            }
+
+            .input-underline {
+                &:before, &:after {
+                    content: " ";
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                    background: $accent-color;
+                    transition: width .3s ease-out;
+                    z-index: 1;
+                }
+
+                &:before { left: 50%; }
+                &:after { right: 50%; }
+            }
+
+            &:after {
+                content: " ";
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #a3abb4;
+            }
+        }
+
+        button {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+}
