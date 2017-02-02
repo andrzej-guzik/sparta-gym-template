@@ -3,6 +3,8 @@
 
     .card {
         border: none;
+        max-width: 21.875rem;
+        margin: 0 auto;
 
         @include media-breakpoint-down(md){
             margin-bottom: 2rem;
