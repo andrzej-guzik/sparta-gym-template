@@ -40,7 +40,8 @@ gulp.task("usemin", function() {
 	return gulp.src("./src/*.html")
 		.pipe($.usemin({
 			css: [  $.rev() ],
-			js: [ $.uglify(), $.rev() ],
+			js1: [ $.uglify(), $.rev() ],
+			js2: [ $.uglify(), $.rev() ],
 			html: [ $.htmlmin({collapseWhitespace: true}) ]
 		}))
 		.pipe(gulp.dest(config.build.dest));

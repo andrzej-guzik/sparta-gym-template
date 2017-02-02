@@ -29,6 +29,7 @@ var config = {
 			baseDir: "src"
 		},
 		files:[
+			"./src/temp/js",
 			"./src/css/**/*.css",
 			"./src/index.html"
 		]

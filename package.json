@@ -4,8 +4,14 @@
   "description": "",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
     "browser-sync": "^2.18.6",
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
@@ -24,10 +30,13 @@
     "gulp-usemin": "^0.3.27",
     "gulp-watch": "^4.3.11",
     "imagemin-pngquant": "^5.0.0",
-    "require-dir": "^0.3.1"
+    "require-dir": "^0.3.1",
+    "webpack": "^2.2.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery-smooth-scroll": "^2.1.2",
+    "waypoints": "^4.0.1"
   }
 }

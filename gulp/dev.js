@@ -1,5 +1,7 @@
 var gulp = require("gulp"),
 	config = require("./config"),
+	webpack = require("webpack"),
+	configWebpack = require("../webpack.config.js"),
 	$ = require("gulp-load-plugins")();
 
 gulp.task("dev:styles", function() {
@@ -16,11 +18,14 @@ gulp.task("dev:styles", function() {
 		.pipe(gulp.dest(config.styles.dest));
 });
 
-gulp.task("dev:scripts", function() {
-	return gulp.src(config.scripts.src)
-		.pipe($.babel())
-		.pipe($.size())
-		.pipe(gulp.dest(config.scripts.dest));
+gulp.task("dev:scripts", function(callback) {
+	webpack(configWebpack, function(err, stats) {
+		if(err) {
+			console.log(err.toString());
+		}
+		console.log(stats.toString());
+		callback();
+	});
 });
 
 gulp.task("dev", gulp.parallel("dev:styles", "dev:scripts"));

@@ -1,0 +1,12 @@
+.animate-item {
+    @include media-breakpoint-up(lg) {
+        opacity: .2;
+        transform: translateY(200px);
+        transition: all .8s ease-out;
+
+        &--is-animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
